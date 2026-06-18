@@ -1,0 +1,6 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>席替え抽選</title><link rel="stylesheet" href="styles.css"></head><body>
+<header><h1 id="title">席替え抽選</h1><p>抽選開始ボタンを押すと、設定された回数だけ席が切り替わります。空欄の席は空席です。</p></header>
+<main class="student-main">
+<div class="panel toolbar"><label>クラス<select id="classSelect"></select></label><label>シャッフル回数<input id="rounds" type="number" min="1" max="999"></label><button id="startBtn">抽選開始</button><button class="secondary" id="fullscreenBtn">全画面</button><button class="secondary" id="printBtn">印刷</button><span id="status" class="status">準備完了</span></div>
+<section class="panel board-shell student-board" style="margin-top:18px"><div class="blackboard">教卓・黒板側</div><div id="topBoard"></div><div class="divider"></div><p class="note" style="text-align:center">反対側から見た座席表</p><div id="bottomBoard"></div></section>
+<p id="message" class="footer-note"></p></main><script src="common.js"></script><script src="student.js"></script></body></html>
